@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="__PUBLIC__/css/site.css">
+	<script src="__PUBLIC__/js/jquery-2.1.4.min.js"></script>
+    <title></title>
+</head>
+<body>
+<section class="container">
+	<div class="g-600 login-panel" id="login-wrapper">
+		<div class="box-shadow">
+			<h1 class="singleHead">用户登录</h1>
+			<form id="loginForm" class="ui-form" method="post" action="index.php?c=Index&a=loginPost">
+				<div class="error">
+					</div>
+				<div class="ui-form-item">
+					<label class="ui-label" for="username">帐 号:</label>
+					<input class="ui-input" type="text" id="username" name="username" value="" placeholder="请输入您的姓名">
+				</div>
+				<div class="ui-form-item">
+					<label class="ui-label" for="password">密 码:</label>
+					<input class="ui-input" type="password" id="password" name="password" placeholder="请输入密码">
+				</div>
+
+				<!--
+				<div class="fbox captcha">
+					<label for="captcha">验 证 码：</label>
+					<input type="text" id="captcha" name="captcha" maxlength="4" />
+					<img id="captchaImg" src="/static/captcha.jspx" alt="captcha" />
+				</div>
+				 -->
+				<div class="login-bar cl">
+					<input id="j_autoLogin" class="ui-checkbox" type="checkbox" name="rememberMe" value="true">
+					<span class="mgr40"><label for="j_autoLogin">自动登录</label></span>
+					<a class="mgr10 fr" href="?c=Index&a=reg">立即注册</a>
+					<a class="fr" style="display: none;" href="">忘记密码？</a>
+
+				</div>
+				<div class="fmes-bar">
+					<button type="submit" class="btn btn-lg btn-primary mgl160">登 录</button>
+				</div>
+			</form>
+		</div>
+		</div>
+</section>
+</body>
+<script src="__PUBLIC__/js/login.js"></script>
+</html>
