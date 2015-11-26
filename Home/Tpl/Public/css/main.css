@@ -1,6 +1,18 @@
 body{
     background: #eee;
 }
+a {
+    cursor: pointer;
+    background: transparent;
+    color: #5d9cec;
+    text-decoration: none
+}
+
+a:hover,a:focus {
+    color: #fb6e52;
+    outline: 0;
+    text-decoration: underline
+}
 .ui-wrap{
     width: 640px;
     margin: 0 auto;
@@ -636,6 +648,7 @@ body{
 }
 
 .ui-tab-item {
+    font-family: 'Microsoft YaHei';
     display: inline-block;
     display: inline\0; /* fix https://github.com/aliceui/tab/issues/1 */
     *display: inline;
